@@ -20,9 +20,9 @@ export default class Toggler {
 
         targetElements.forEach((element) => {
             if (input.value === toggleValue) {
-                element.classList.remove('toggler-hidden');
-            } else {
                 element.classList.add('toggler-hidden');
+            } else {
+                element.classList.remove('toggler-hidden');
             }
         });
     }

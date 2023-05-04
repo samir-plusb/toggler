@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggler Beispiel</title>
+    <link rel="stylesheet" href="toggler.css">
+</head>
+<body>
+<h1>Toggler Beispiel</h1>
+<p>Geben Sie den Wert 10 ein, um das Bild auszublenden:</p>
+<input type="number" id="example-input" data-toggle-target=".example-target" data-toggle-value="10" value="1">
+<div class="example-target">
+    <img src="https://cataas.com/cat/says/hello%20world!" alt="Hello World Cat">
+</div>
+
+<script type="module">
+    import Toggler from './toggler.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+        new Toggler();
+    });
+</script>
+</body>
+</html>
