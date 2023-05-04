@@ -16,7 +16,6 @@ npm install https://gitlab.com/plusb/toggler.git
 1. Binden Sie die `toggler.css` und `toggler.js` Dateien in Ihrem HTML-Dokument ein:
 
 ```html
-
 <link rel="stylesheet" href="node_modules/toggler/toggler.css">
 <script src="node_modules/toggler/toggler.js"></script>
 ```

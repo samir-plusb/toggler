@@ -5,13 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toggler Beispiel</title>
     <link rel="stylesheet" href="toggler.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        input {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 1rem;
+        }
+    </style>
 </head>
 <body>
-<h1>Toggler Beispiel</h1>
-<p>Geben Sie den Wert 10 ein, um das Bild auszublenden:</p>
-<input type="number" id="example-input" data-toggle-target=".example-target" data-toggle-value="10" value="1">
-<div class="example-target">
-    <img src="https://cataas.com/cat/says/hello%20world!" alt="Hello World Cat">
+<div class="container">
+    <h1>Toggler Beispiel</h1>
+    <p>Geben Sie den Wert 10 ein, um das Bild auszublenden:</p>
+    <input type="number" id="example-input" data-toggle-target=".example-target" data-toggle-value="10" value="1">
+    <div class="example-target">
+        <img src="https://cataas.com/cat/says/hello?width=600" alt="Hello World Cat">
+    </div>
 </div>
 
 <script type="module">
