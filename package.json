@@ -1,0 +1,20 @@
+{
+  "name": "toggler",
+  "version": "1.0.0",
+  "description": "A library to toggle form elements based on input values",
+  "main": "toggler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/plusb/toggler.git"
+  },
+  "author": "",
+  "license": "proprietary",
+  "homepage": "https://gitlab.com/plusb/toggler",
+  "files": [
+    "toggler.js",
+    "toggler.css"
+  ]
+}
