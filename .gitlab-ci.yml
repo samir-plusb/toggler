@@ -1,7 +1,11 @@
-image: node:latest
+default:
+  image: node:latest
 
 pages:
   stage: deploy
+  only:
+    refs:
+      - main
   environment:
     name: frontend
     url: '$CI_PAGES_URL'
@@ -10,8 +14,8 @@ pages:
     - cp index.html .public/
     - cp toggler.js .public/
     - cp toggler.css .public/
+    - mv .public public
   artifacts:
     paths:
-      - .public
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "main"'
+      - public
+
